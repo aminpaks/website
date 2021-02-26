@@ -4,6 +4,10 @@ import { AminPaksLogo, LinkedInLogo, TwitterLogo } from './logos';
 const styles = css`
   background: #353e58 url('/background0.jpg') no-repeat center top;
   background-size: cover;
+
+  @media screen and (max-height: 1200px) {
+    background-position: center 30%;
+  }
 `;
 
 const container = css`
@@ -63,9 +67,7 @@ export const App = () => {
           <span className="ml-auto mr-auto block">
             <AminPaksLogo />
           </span>
-          <span className="whitespace-nowrap uppercase font-bold text-4xl sm:text-5xl">
-            Amin Pakseresht
-          </span>
+          <span className="uppercase font-bold text-4xl sm:text-5xl">Amin Pakseresht</span>
         </div>
         <div
           css={taglineStyles}
