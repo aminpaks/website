@@ -5,7 +5,7 @@ const styles = css`
   background: #353e58 url('/background0.jpg') no-repeat center top;
   background-size: cover;
 
-  @media screen and (max-height: 1200px) {
+  @media screen and (min-height: 800px) {
     background-position: center 30%;
   }
 `;
